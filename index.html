@@ -3,254 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <title>Zaldy L. Bernabe | Senior MEP Project & Commissioning Manager</title>
+    <meta name="description" content="Professional profile of Zaldy L. Bernabe, BSME. Senior MEP Project & Commissioning Manager with 18+ years of international experience in Oil & Gas and HVAC infrastructure.">
+    <!-- Modern Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
-        }
-
-        /* Facebook-style Post Card */
-        .post-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .post-header {
-            padding: 16px;
-            border-bottom: 1px solid #e5e5e5;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .post-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #667eea;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .author-info h3 {
-            margin: 0;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .author-info p {
-            margin: 4px 0 0 0;
-            font-size: 12px;
-            color: #65676b;
-        }
-
-        .post-body {
-            padding: 16px;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #050505;
-        }
-
-        .post-body h2 {
-            margin-bottom: 12px;
-            font-size: 24px;
-        }
-
-        .post-body p {
-            margin-bottom: 12px;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background: white;
-            border-radius: 8px;
-            padding: 24px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            color: #050505;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
-            font-family: inherit;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-group button {
-            width: 100%;
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .form-group button:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-
-        .form-group button:active:not(:disabled) {
-            transform: translateY(0);
-        }
-
-        .form-group button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        [data-fs-success] {
-            display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 12px 16px;
-            border-radius: 6px;
-            margin-bottom: 16px;
-            border: 1px solid #c3e6cb;
-        }
-
-        [data-fs-success].show {
-            display: block;
-        }
-
-        [data-fs-error] {
-            color: #dc3545;
-            font-size: 13px;
-            margin-top: 4px;
-            display: block;
-        }
-
-        @media (max-width: 600px) {
-            .post-body h2 {
-                font-size: 20px;
-            }
-
-            .post-body {
-                font-size: 14px;
-            }
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <!-- Facebook-style Post -->
-        <div class="post-card">
-            <div class="post-header">
-                <div class="post-author">
-                    <div class="avatar">B</div>
-                    <div class="author-info">
-                        <h3>Your Name</h3>
-                        <p>Just now</p>
+<body class="bg-[#0b0f19] text-slate-300 antialiased selection:bg-cyan-500 selection:text-slate-900">
+
+    <!-- HERO / IDENTITY HEADER -->
+    <header class="relative overflow-hidden bg-gradient-to-b from-[#111827] via-[#0f172a] to-[#0b0f19] pt-20 pb-12 px-6 border-b border-slate-800">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
+            <!-- Dynamic Status Alert -->
+            <div class="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full px-4 py-1.5 text-xs font-semibold text-cyan-400 uppercase tracking-widest mono mb-6">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                Active Operational Status
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-none">
+                Zaldy L. Bernabe, <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">BSME</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold text-slate-200 mt-4 tracking-tight">
+                Senior MEP Project & Commissioning Manager
+            </p>
+            <p class="text-md text-slate-400 mt-2 font-medium tracking-wide max-w-3xl uppercase text-xs mono text-cyan-500/90">
+                Mechanical / HVAC • Oil & Gas • Materials Reliability
+            </p>
+
+            <!-- TREND 1: QUICK IMPACT METRIC DASHBOARD -->
+            <div class="grid grid-cols-3 max-w-xl bg-[#111726]/80 border border-slate-800/80 rounded-xl p-4 mt-6 text-center mono">
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-cyan-400">18+</div>
+                    <div class="text-[10px] uppercase text-slate-400 tracking-wider mt-1">Years Exp.</div>
+                </div>
+                <div class="border-x border-slate-800">
+                    <div class="text-2xl md:text-3xl font-bold text-indigo-400">KOC</div>
+                    <div class="text-[10px] uppercase text-slate-400 tracking-wider mt-1">Aligned</div>
+                </div>
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-emerald-400">SAP</div>
+                    <div class="text-[10px] uppercase text-slate-400 tracking-wider mt-1">Systems</div>
+                </div>
+            </div>
+
+            <!-- TREND 2: HERO CALL TO ACTIONS -->
+            <div class="mt-8 flex flex-wrap items-center gap-4 text-sm border-t border-slate-800/60 pt-6">
+                <a href="mailto:bernabezaldy@gmail.com" class="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-indigo-500 text-slate-950 font-bold rounded-lg hover:opacity-90 transition-all shadow-lg shadow-cyan-500/10">
+                    Connect via Email
+                </a>
+                <a href="https://www.linkedin.com/in/zaldybernabe-me" target="_blank" class="px-5 py-2.5 bg-slate-800 text-white font-medium rounded-lg hover:bg-slate-700 transition-all border border-slate-700">
+                    LinkedIn Profile
+                </a>
+                <div class="text-slate-500 mono text-xs md:ml-auto">
+                    <span>📍 Kuwait (+965 55064832)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN DASHBOARD LAYOUT -->
+    <main class="max-w-5xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="space-y-6 lg:col-span-1">
+            <!-- TREND 3: DASHBOARD TECH CAPSULES -->
+            <div class="bg-[#111726] border border-slate-800/80 rounded-xl p-6">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-400 mono mb-4 flex items-center gap-2">
+                    <span>//</span> Core Expertise
+                </h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-white font-semibold text-xs uppercase text-slate-400 tracking-wider mb-2">Systems Mastery</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-cyan-400"></span>HVAC / MEP</span>
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-cyan-400"></span>Commissioning</span>
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-cyan-400"></span>Piping Fabrication</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-semibold text-xs uppercase text-slate-400 tracking-wider mb-2">Logistics & ERP Tools</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-indigo-400"></span>SAP ERP</span>
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-indigo-400"></span>eBEAMS</span>
+                            <span class="bg-slate-900 text-slate-300 text-xs px-2.5 py-1 rounded border border-slate-800 flex items-center gap-1.5"><span class="h-1 w-1 rounded-full bg-indigo-400"></span>Power BI</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="post-body">
-                <h2>Welcome! 👋</h2>
-                <p>This is your amazing landing page. Share your message, your story, or your project details here.</p>
-                <p>Connect with your audience and let them reach out to you through the contact form below.</p>
+            <div class="bg-[#111726] border border-slate-800/80 rounded-xl p-6">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-cyan-400 mono mb-4 flex items-center gap-2">
+                    <span>//</span> Leadership
+                </h2>
+                <ul class="space-y-3 text-sm">
+                    <li class="text-slate-300 font-medium">
+                        <span class="text-indigo-400 font-bold block">Board of Director</span>
+                        PSME Kuwait (2023–2026)
+                    </li>
+                    <li class="text-slate-400 border-t border-slate-800/60 pt-2">
+                        <span class="text-slate-300 font-medium block">Member</span>
+                        Saudi Council of Engineers
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <!-- Contact Form with Formspree AJAX -->
-        <div class="contact-form">
-            <h3 style="margin-bottom: 20px; font-size: 18px;">Get in Touch</h3>
-            <div data-fs-success style="background: #d4edda; color: #155724; padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; border: 1px solid #c3e6cb;">
-                ✓ Message sent successfully! We'll get back to you soon.
-            </div>
+        <!-- RIGHT COLUMN: TRACK RECORD -->
+        <div class="lg:col-span-2 space-y-8">
+            <section>
+                <h2 class="text-sm uppercase font-bold tracking-widest text-slate-400 mono mb-4">Key Achievements</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-br from-[#121b2e] to-[#0f172a] p-5 rounded-xl border border-indigo-500/20">
+                        <span class="text-xs uppercase font-bold tracking-wider text-indigo-400 mono">KOC Lower Fars Heavy Oil</span>
+                        <p class="text-slate-300 text-sm mt-2 font-light">Managed full testing and commissioning handover pipelines, ensuring perfect HVAC TAB compliance protocols[span_1](start_span)[span_1](end_span).</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#121b2e] to-[#0f172a] p-5 rounded-xl border border-cyan-500/20">
+                        <span class="text-xs uppercase font-bold tracking-wider text-cyan-400 mono">Strategic Redesign Optimization</span>
+                        <p class="text-slate-300 text-sm mt-2 font-light">Engineered consultant-approved ductwork changes across 8 complex buildings, reducing project baseline budgets[span_2](start_span)[span_2](end_span).</p>
+                    </div>
+                </div>
+            </section>
 
-            <form id="my-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" data-fs-field required>
-                    <span data-fs-error="name"></span>
+            <section class="space-y-6">
+                <h2 class="text-sm uppercase font-bold tracking-widest text-slate-400 mono mb-2">Chronological Experience</h2>
+                
+                <div class="relative pl-6 border-l-2 border-cyan-500/30 space-y-2">
+                    <div class="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-cyan-500"></div>
+                    <div class="flex flex-wrap justify-between items-baseline gap-2">
+                        <h3 class="text-white font-bold text-base">Technical Assistant – Materials / Gas Reliability</h3>
+                        <span class="text-xs mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded">2023–Present</span>
+                    </div>
+                    <p class="text-xs text-cyan-400/90 font-medium tracking-wide">Gulf Spic GT&C supporting Kuwait Oil Company (KOC) | Ahmadi[span_3](start_span)[span_3](end_span)</p>
+                    <ul class="list-disc list-outside pl-4 text-sm text-slate-400 space-y-1 font-light">
+                        <li>Synchronize critical materials routing, vendor logic systems, and technical evaluations via SAP/eBEAMS networks[span_4](start_span)[span_4](end_span).</li>
+                    </ul>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" data-fs-field required>
-                    <span data-fs-error="email"></span>
+                <div class="relative pl-6 border-l-2 border-slate-800 space-y-2">
+                    <div class="absolute -left-[5px] top-1.5 h-2 w-2 rounded-full bg-slate-700"></div>
+                    <div class="flex flex-wrap justify-between items-baseline gap-2">
+                        <h3 class="text-white font-bold text-base">Supervisor – Building Maintenance & HVAC</h3>
+                        <span class="text-xs mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded">2021–2022</span>
+                    </div>
+                    <p class="text-xs text-indigo-400/90 font-medium tracking-wide">AlSaif Co., Heavy Oil Project Support Complex – KOC South Ratqa[span_5](start_span)[span_5](end_span)</p>
+                    <ul class="list-disc list-outside pl-4 text-sm text-slate-400 space-y-1 font-light">
+                        <li>Supervised complex HVAC, plumbing, firefighting, and structural engineering compliance actions directly on-site[span_6](start_span)[span_6](end_span).</li>
+                    </ul>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" data-fs-field required></textarea>
-                    <span data-fs-error="message"></span>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" data-fs-submit-btn>Send Message</button>
-                </div>
-            </form>
+            </section>
         </div>
-    </div>
+    </main>
 
-    <!-- Formspree AJAX Library -->
-    <script>
-        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { formElement: '#my-form', formId: 'mbdvdgrk' });
-    </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <footer class="border-t border-slate-900 bg-[#090d16] py-8 text-center text-xs text-slate-600 mono">
+        <p>&copy; 2026 Zaldy L. Bernabe. Validated Operations Architecture Portfolio.</p>
+    </footer>
+
 </body>
 </html>
